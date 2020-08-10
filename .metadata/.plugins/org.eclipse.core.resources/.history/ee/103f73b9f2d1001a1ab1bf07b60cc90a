@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class Main {
+	private static ArrayList<Album> albumList = new ArrayList<Album>();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList<Song> playlist = new LinkedList<Song>();
+		Album demonDays = new Album("Demon Days","Gorillaz");
+		Album rtj4 = new Album("RTJ4", "Run the Jewels");
+		demonDays.addSong("Feel Good Inc", 4.00);
+		demonDays.addSong("Dance", 2.55);
+		demonDays.addSong("DirtyHarry", 3.40);
+		rtj4.addSong("Oh La La", 3.12);
+		rtj4.addSong("yankee and the brave",2.27);
+		rtj4.addSong("out of sight", 3.21);
+		albumList.add(demonDays);
+		albumList.add(rtj4);
+		playlist.add(albumList.get(0).findSong("Feel Good Inc"));
+		
+	}
+
+}

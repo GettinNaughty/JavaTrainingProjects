@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+
+public class League<T extends Sport> implements Comparable<League<T>> {
+	public String name;
+	private ArrayList<T> league = new ArrayList<>();
+	@Override
+	public int compareTo(League<T> arg0) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}
