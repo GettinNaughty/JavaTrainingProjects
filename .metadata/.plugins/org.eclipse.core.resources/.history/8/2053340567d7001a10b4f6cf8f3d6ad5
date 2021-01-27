@@ -1,4 +1,0 @@
-
-public class League<T extends Team> implements Comparable<Team<T>> {
-	
-}
